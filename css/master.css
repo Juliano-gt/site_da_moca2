@@ -33,6 +33,11 @@ body{
     margin: 0 auto;
 }
 
+.feedback{
+    height: 100px;
+    width: 100%;
+}
+
 .contat{
     text-align: center;
     margin: 5% auto 0 auto;

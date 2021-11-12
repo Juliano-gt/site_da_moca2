@@ -25,11 +25,13 @@
                 <?php include 'comp/ofertas.php' ?>
             </div>
             <br><br><br>
+
+
             <div class="feedback">
-                <div class="fds">
-                    
-                </div>
+                
             </div>
+
+
 
             <div class="about">
                 <div class="line"></div>
