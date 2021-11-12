@@ -1,0 +1,15 @@
+.navbar-nav{
+  margin: auto 5% 0 auto;
+}
+.nav-item a{
+  font-size: 14px;
+  color: black;
+}
+
+.navbar{
+  background-color: white;
+}
+
+.navbar-toggler i{
+  color: white;
+}

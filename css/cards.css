@@ -1,0 +1,56 @@
+.fechado .card-group{
+    margin: 2% auto 0 auto;
+    width: 50%;
+}
+
+.ofertas .card-group .allCard{
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+}
+
+.ofertas .card-group .allCard p{
+    text-align: justify;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.ofertas .card-group .allCard i{
+    font-size: 50px;
+    margin-bottom: 1%;
+}
+
+.ofertas .card-group .cardDown{
+    margin: 5% auto 0 auto;
+}
+
+.ofertas .card-group .cardDown i{
+    color: #1a6100;
+}
+
+.ofertas .card-group .of{
+    height: 100%;
+}
+
+.ofertas .card-group .cardUp i{
+    color: #002100;
+}
+.ofertas .card-group .cardUp{
+    color: white;
+}
+
+
+.ofertas .allCard .of{
+    border: 3px solid #002100;
+    background-color: #002100;
+    border-radius: 20px;
+}
+
+.ofertas .allCard .ofDown{
+    border: 3px solid #1a6100;
+    border-radius: 20px;
+}
+.ofertas .card-group{
+    width: 70%;
+    margin: 0 auto;
+}
