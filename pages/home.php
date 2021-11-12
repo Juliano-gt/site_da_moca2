@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./css/nav.css">
         <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/cards.css">
+        
         <title>WC Consult</title>
     </head>
     <body>
@@ -14,6 +15,7 @@
             <?php include 'comp/carousel.php' ?>
         </div>
 
+        <div class="toCenter">
         <div class="fechado">
             <div class="line"></div>
             <h5 class="inLine">Bancos parceiros</h5>
@@ -28,6 +30,13 @@
 
 
             <div class="feedback">
+                
+                <div class="bgFeed backFeed">
+                <div class="contFeed">
+                    <?php include 'comp/cel_carousel.php' ?>
+                </div>
+                </div>
+                <div class="lineFeed backFeed"></div>
                 
             </div>
 
@@ -52,6 +61,7 @@
                   <a href=""><i class="fab fa-facebook-square"></i></a>
             </div>
             <br><br>
+        </div>
         </div>
         <div class="footer">
             <div class="container">
