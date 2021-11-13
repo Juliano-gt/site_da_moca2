@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="./css/nav.css">
         <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/cards.css">
-        
+        <link rel="stylesheet" href="./css/cel_carousel.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <title>WC Consult</title>
     </head>
     <body>
@@ -32,13 +33,68 @@
             <div class="feedback">
                 
                 <div class="bgFeed backFeed">
-                <div class="contFeed">
-                    <?php include 'comp/cel_carousel.php' ?>
+                <div class="others">
+                    <img class="wcTrans" src="img\wc_images\wc_trans.png" alt="">
+                    <img class="wcLogo" src="img\others\wc-branco-transp 1.png" alt="">
                 </div>
+                <div class="congrats">
+                        <h3>Prazer de melhor <br>
+                        atendê-los e garantir seu <br> sorriso no final da  <br> contratação.</h3>
+                    </div>
                 </div>
-                <div class="lineFeed backFeed"></div>
+                <div class="whiteCred">
+                    <h3>FEEDBACK DE <br>
+                    CLIENTES <br> 
+                    wHITE <span>CRED</span></h3>
+                </div>
+                <div class="lineFeed backFeed"></div> 
                 
             </div>
+            <div class="feedCont">
+                        <div class="celBack">
+                            
+                            <div id="carouselExampleControls" class="carousel cel cell1" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img\others\1.JPG" class="d-block" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img\others\2.JPG" class="d-block" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img\others\3.png" class="d-block" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="trueCel" src="img\others\cel.png" alt="">
+                        </div>
+                        <div class="celFront">
+                            <img class="trueCel" src="img\others\cel.png" alt="">
+                            <div id="carouselExampleControls" class="carousel cel cell2" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img\others\2.JPG" class="d-block" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img\others\3.png" class="d-block" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img\others\1.JPG" class="d-block" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev prev" type="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next next" type="button"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+                </div>
+                        
+               
 
 
 
@@ -68,14 +124,25 @@ atendê-los e garantir seu sorriso no final da contratação. </p>
             <div class="footer3"><div class="container">
               <div class="row">
               <p class="col-5">Copyright © 2021 Empresta Online. Todos os direitos reservados</p>
-             <h5><img src="img\others\Group_44.png"> </h5>
+                <img src="img\others\Group_44.png">
               
               </div>
           </div>
         </div>
         </div>
+        <script>
+          $('.next').click( function (){
+            $('.cel').carousel('next')
+          });
+
+          $('.prev').click( function (){
+            $('.cel').carousel('prev')
+          });
+    </script>
     </body>
+
     
+
     <script> 
             window.addEventListener("scroll", function(){
                 var navbar = document.querySelector("header"); 

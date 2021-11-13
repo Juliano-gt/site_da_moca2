@@ -28,6 +28,9 @@ body{
     
 } 
 
+.about{
+    margin-top: 200px;
+}
 
 
 .about .inLine{
@@ -48,67 +51,99 @@ body{
     height: 100%;
     margin: 0 auto;
 }
-
-.contFeed img{
-    margin: 50px;
-    width: 600px;
-    height: 340px;
-    transform: skewY(3deg); 
-    position: relative; 
-    margin-left: -50px;
-
-} 
-
-.contFeed .transp{
-    width: 72px; 
-    height: 50px; 
-    position: absolute; 
-    margin-left: 450px;
+.feedCont{
+    transform: skewY(0deg); 
+}
+.bgFeed .others{
+    transform: skewY(3deg);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
 
-.contFeed h2{
-    margin: -290px 0 0 150px; 
-    margin-left: 150px;
-    width: 280px;
+.feedback .others .wcTrans{
+    width: 35%;
+    height: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.feedback .others .wcLogo{
+    width: 5%;
+    height: 5%;
+    margin-top: -13%;
+    margin-left: -8%;
+    
+}
+.feedback .congrats{
+    float: right;
+    margin: 100px 0 0 0;
     height: 200px;
+    width: 500px;
     transform: skewY(3deg);
-    color: white;
-    font-size: 48px; 
-} 
+    background-color: #DAF1D5;
+;
+}
+.feedback .congrats h3{
+    text-align: right;
+    float: right;
+    font-size: 125%;
+    padding: 10% 9% 0 0;
+    width: 60%;
+    font: 'Lato', Verdana, Helvetica, sans-serif;
+}
 
-.contFeed h2 span{
+.feedback .whiteCred{
+    width: 20%;
+    float: left;
+    margin-top: -250px;
+    margin-left: 18%;
+    transform: skewY(0deg);
+}
+.feedback .whiteCred h3{
+    color: white;
+    font: 'Lato', Verdana, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+
+}
+
+.feedback .whiteCred span{
     color: #49d49f;
 }
 
-.contFeed .grats{
-    height: 246px;
-    width: 723px;
-    background-color: #DAF1D5;
-    float: right;
-    margin-top: -250px;
-    transform: skewY(3deg);
+
+.feedCont .cels{
+    position: fixed;
+    width: 100%;
 }
-.grats h4{
-    margin: 70px 169px 0 0;
-    float: right;
-    transform: skewY(0deg);
-    text-align: right;
-    width: 250px;
-    color: black; 
-    height: 156px ;
-    font: 'Lato', Verdana, Helvetica, sans-serif;
+.feedCont .celImage{
+    display: block;
+    margin: -335px auto 0 auto;
+    width: 247px;
 }
-.bgFeed{
+.feedCont .celImage2{
+    display: block;
+    margin: -450px auto 0 55%;
+    width: 167px;
+
+}
+
+
+.feedback .bgFeed{
     background-color: #002100;
-    height: 502px;
+    height: 400px;
     transform: skewY(-3deg);
 }
 
+
 .lineFeed{
     background-color: #002100;
-    margin-top: 2px;
-    height: 3px;
     transform: skewY(-3deg);
+    position: static;
+    margin-top: 5px;
+    height: 8px;    
 }
 
 .contat{
@@ -125,20 +160,12 @@ body{
     width: 100%;
     color: white;
     background-color: rgba(0,23,0,1); 
-   
     height: 100px; 
-   
-    
 }
 
 .footer p{
     text-align: justify;
 }
-
-.footer h5{
-    margin: auto;
-    float: right;
-} 
 
 .fechado {
     margin-top: 100px; 
@@ -173,5 +200,9 @@ body{
     margin-top: 20px;
 }
 
-
-
+.footer3 img{
+    margin: 30px auto 0 auto;
+    float: right;
+    height: 50px;
+    width: 314px;
+}

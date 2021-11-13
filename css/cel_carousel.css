@@ -1,0 +1,48 @@
+
+.celBack .carousel .carousel-inner{
+    margin: -480px auto 0 auto;
+    position: absolute;
+
+}
+
+.celBack .carousel .carousel-inner img{
+    margin: 0 30% 0 55.8%;
+    width: 160px;
+    height: 293px;
+    z-index: -2;
+}
+
+.celBack .trueCel{
+    margin: -510px 0 0 55%;
+    position: absolute;
+    width: 177.91px;
+    height: 363px;
+    z-index: -1;
+}
+
+.celFront .carousel .carousel-inner{
+    margin: -600px auto 0 auto;
+    position: absolute;
+}
+
+.celFront .carousel .carousel-inner img{
+    margin: 130px auto 0 38%;
+    width: 254px;
+    height: 430.05px;
+    z-index: 2;
+}
+
+.celFront .trueCel{
+    margin: -530px 0 0 37.2%;
+    position: absolute;
+    width: 274px;
+    height: 559.05px;
+    z-index: 3;
+}
+.celCarousel .carousel button{
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 1;
+    padding: 20px 20px;
+}

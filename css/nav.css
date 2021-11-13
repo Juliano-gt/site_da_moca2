@@ -32,6 +32,7 @@
 
 .navbar a {
   display: none;
+  transition-duration: 0.5s;
 }
 
 .sticky .navbar a{
