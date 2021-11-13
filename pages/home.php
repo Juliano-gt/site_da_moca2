@@ -10,10 +10,10 @@
         <title>WC Consult</title>
     </head>
     <body>
-        <div class="header">
+        <header>
             <?php include 'comp/nav.php' ?>
             <?php include 'comp/carousel.php' ?>
-        </div>
+</header>
 
         <div class="toCenter">
         <div class="fechado">
@@ -44,15 +44,15 @@
 
             <div class="about">
                 <div class="line"></div>
-                <h5 class="inLine">Sobre</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book. It has survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essentially unchanged. It was popularised in
-                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.</p>
+                <h5 class="inLine">Sobre nós</h5>
+                <p>A WhiteCred não é uma instituição financeira, atuamos como correspondentes bancários a
+mais de um ano, prestando serviços de intermediação e atendimento aos clientes e usuários
+dos maiores bancos. A atividade do correspondente é regulamentada pelo Banco Central do
+Brasil, resolução n° 3.954, de fevereiro de 2011. Prezamos pela segurança de nossos clientes,
+oferecendo as melhores possibilidades e o melhor atendimento, justamente para te ajudar a
+encontrar sua solução financeira. Se nosso trabalho não suprir a necessidade dos nossos
+clientes, significa que não alcançamos nosso objetivo, por isso, temos o prazer de melhor
+atendê-los e garantir seu sorriso no final da contratação. </p>
             </div>
 
             <div class="contat">
@@ -63,21 +63,24 @@
             <br><br>
         </div>
         </div>
+      <div class="footer2"></div>
         <div class="footer">
-            <div class="container">
+            <div class="footer3"><div class="container">
               <div class="row">
-              <p class="col-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was popularised in
-                the 1960s with the release o</p>
-              <h5 class="col">Logo <img src="" alt="Logo"></h5>
+              <p class="col-5">Copyright © 2021 Empresta Online. Todos os direitos reservados</p>
+             <h5><img src="img\others\Group_44.png"> </h5>
+              
               </div>
           </div>
         </div>
+        </div>
     </body>
-    <script>
-        $('.carousel').carousel({interval: 2000})
+    
+    <script> 
+            window.addEventListener("scroll", function(){
+                var navbar = document.querySelector("header"); 
+                navbar.classList.toggle("sticky", window.scrollY != 0);
+            }
+             );
     </script>
 </html>

@@ -1,42 +1,55 @@
 .fechado .card-group{
     margin: 2% auto 0 auto;
-    width: 50%;
+    width: 60%;
 }
 
 .ofertas .card-group .allCard{
     margin: 0 auto;
-    width: 33%;
+    width: 31.5%;
     text-align: center;
 }
 
 .ofertas .card-group .allCard p{
-    text-align: justify;
-    width: 90%;
-    margin: 5% auto;
+    text-align: center;
+   padding: 10%;
+    margin: auto;
+    color:#858585 ; 
+    height: 170px;
+} 
+.allCard img {
+    height: 71px; 
 }
 
-.ofertas .card-group .allCard i{
-    font-size: 50px;
-    margin-bottom: 1%;
-}
+
 
 .ofertas .card-group .cardDown{
-    margin: 5% auto 0 auto;
+    margin: 42px auto 0 auto; 
+    
 }
 
-.ofertas .card-group .cardDown i{
-    color: #1a6100;
+.ofertas .card-group .cardDown img{
+    width: 23.5%; 
+    margin-bottom: 20px; 
+    height: 18%;
 }
 
 .ofertas .card-group .of{
     height: 100%;
 }
 
-.ofertas .card-group .cardUp i{
-    color: #002100;
+.ofertas .card-group .cardUp p{
+    color: #FFFFFF;
+} 
+.ofertas .card-group .cardUp img{ 
+    width: 25%; 
+    margin-bottom: 20px;  
+    height: 25%;
+    
+   
 }
-.ofertas .card-group .cardUp{
-    color: white;
+.ofertas .card-group .cardUp {
+    color: #FFFFFF; 
+    height: 320px;
 }
 
 
@@ -53,4 +66,21 @@
 .ofertas .card-group{
     width: 70%;
     margin: 0 auto;
-}
+} 
+
+.fechado .card-group .card {
+    border: none; 
+    margin:  0 5px 0 5px;
+} 
+
+.fechado .card img {
+    width: 150px;
+} 
+
+
+
+ 
+.ofertas .card-group .allCard h3 {
+  padding-top: 30px;
+ } 
+

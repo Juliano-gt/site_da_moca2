@@ -14,18 +14,21 @@ body{
 
 .line{
     width: 50%;
-    background-color: black;
+    background-color: #858585;
     height: 3px;
     border-radius: 10px;
-    margin:3% auto 0 auto;
+    margin: 5% auto 0 auto; 
 }
 .inLine {
     text-align: center;
-    margin:-1% auto 0 auto;
+    margin: -15px auto 0 auto;
     background-color: white;
-    width: 15%;
-    border-radius: 50%;
-}
+    width: 200px;  
+    color: #858585; 
+    
+} 
+
+
 
 .about .inLine{
     width: 10%;
@@ -33,8 +36,11 @@ body{
 }
 .about p{
     text-align: center;
-    width: 80%;
-    margin: 2% auto 0 auto;
+    width: 70%;
+    margin: 2% auto 0 auto; 
+    font-family: roboto; 
+    font-size: 18px; 
+    font-weight: 200;
 }
 
 .bgOthers{
@@ -45,34 +51,52 @@ body{
 
 .contFeed img{
     margin: 50px;
-    width: 300px;
-    height: 200px;
-    transform: skewY(3deg);
+    width: 600px;
+    height: 340px;
+    transform: skewY(3deg); 
+    position: relative; 
+    margin-left: -50px;
+
+} 
+
+.contFeed .transp{
+    width: 72px; 
+    height: 50px; 
+    position: absolute; 
+    margin-left: 450px;
 }
 
-.contFeed h4{
-    margin: -150px 0 0 150px;
-    width: 300px;
+.contFeed h2{
+    margin: -290px 0 0 150px; 
+    margin-left: 150px;
+    width: 280px;
     height: 200px;
     transform: skewY(3deg);
     color: white;
+    font-size: 48px; 
+} 
+
+.contFeed h2 span{
+    color: #49d49f;
 }
 
 .contFeed .grats{
     height: 246px;
-    width: 523px;
+    width: 723px;
     background-color: #DAF1D5;
     float: right;
     margin-top: -250px;
     transform: skewY(3deg);
 }
 .grats h4{
-    margin: 30px 100px 0 0;
+    margin: 70px 169px 0 0;
     float: right;
     transform: skewY(0deg);
     text-align: right;
     width: 250px;
-    color: black;
+    color: black; 
+    height: 156px ;
+    font: 'Lato', Verdana, Helvetica, sans-serif;
 }
 .bgFeed{
     background-color: #002100;
@@ -100,7 +124,11 @@ body{
 .footer{
     width: 100%;
     color: white;
-    background-color: rgba(0,23,0,1);
+    background-color: rgba(0,23,0,1); 
+   
+    height: 100px; 
+   
+    
 }
 
 .footer p{
@@ -110,8 +138,40 @@ body{
 .footer h5{
     margin: auto;
     float: right;
+} 
+
+.fechado {
+    margin-top: 100px; 
+    margin-bottom: 100px;
+} 
+
+.fechado img{
+    margin-top: 65px;
 }
 
+.feedback{
+    margin-top: 200px;
+} 
+.footer2{
+    width: 100%;
+    height: 3px; 
+   background-color: rgba(0,23,0,1);
+   margin-bottom: 10px; 
+   transform: skewY(-0.8deg); 
+} 
+.footer3 {
+    width: 100%;
+    height: 15px; 
+   background-color: rgba(0,23,0,1); 
+   transform: skewY(-1deg);
+
+} 
+.footer .row p{
+    text-align: left; 
+    width: 300px; 
+    color: white; 
+    margin-top: 20px;
+}
 
 
 

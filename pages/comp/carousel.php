@@ -10,4 +10,14 @@
       <img src="img/3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
+</div> 
+<div class="texto-carousel">
+    <h2>FEADBACK DE
+CLIENTES 
+WHITE <span>CRED</span></h2>
+    <p>Nosso crédito é sem consulta SPC e SERASA,
+possuímos as melhores taxas do mercado, maior prazo e parcelas que cabem no seu bolso.</p> 
+<button> 
+<i class="fab fa-whatsapp"></i>
+Whatsapp</button>
 </div>

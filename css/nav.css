@@ -3,13 +3,37 @@
 }
 .nav-item a{
   font-size: 14px;
-  color: black;
+  color: white;
 }
 
-.navbar{
-  background-color: white;
-}
+
 
 .navbar-toggler i{
-  color: black;
+  color: white;
+}
+
+.sticky .navbar{
+  background-color: #001700; 
+  opacity: 1.0; 
+  transition-duration: 0.5s; 
+} 
+
+
+.navbar{
+  background-color: none; 
+  transition-duration: 0.5s;
+  opacity: 0; 
+} 
+
+.navbar a:hover {
+  text-decoration: underline #DAF1D5; 
+  color: white; 
+}
+
+.navbar a {
+  display: none;
+}
+
+.sticky .navbar a{
+  display: block;
 }
