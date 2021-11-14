@@ -39,10 +39,21 @@
     height: 559.05px;
     z-index: 3;
 }
-.celCarousel .carousel button{
-    width: 50px;
-    border-radius: 50%;
-    background-color: black;
+.feedCont .prev{
+    margin-left: 25%;
+}
+
+.feedCont .next{
+    margin-right: 25%;
+    position: absolute;
+}
+.feedCont button{
     opacity: 1;
-    padding: 20px 20px;
+
+}
+.feedCont button i{
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
 }

@@ -12,10 +12,10 @@
                   <a class="nav-link" href="#">INICIO</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">CONTATOS</a>
+                  <a class="nav-link" href="#ofertas">OFERTAS</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">SOBRE</a>
+                  <a class="nav-link" href="#sobre">SOBRE</a>
               </li>
           </ul>
       </div>

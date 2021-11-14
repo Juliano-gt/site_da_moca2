@@ -11,7 +11,7 @@
         <title>WC Consult</title>
     </head>
     <body>
-        <header>
+        <header id="start">
             <?php include 'comp/nav.php' ?>
             <?php include 'comp/carousel.php' ?>
 </header>
@@ -23,7 +23,8 @@
             <?php include 'comp/fechado.php' ?>
         </div>
 
-        <div class="bgOthers">
+        <div class="bgOthers" id="ofertas">
+            
             <div class="ofertas"><br>
                 <?php include 'comp/ofertas.php' ?>
             </div>
@@ -52,8 +53,7 @@
             </div>
             <div class="feedCont">
                         <div class="celBack">
-                            
-                            <div id="carouselExampleControls" class="carousel cel cell1" data-bs-ride="carousel">
+                            <div id="carouselExampleControls" class="carousel cel cell1" data-bs-ride="carousel" data-bs-interval='false'>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="img\others\1.JPG" class="d-block" alt="...">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="celFront">
                             <img class="trueCel" src="img\others\cel.png" alt="">
-                            <div id="carouselExampleControls" class="carousel cel cell2" data-bs-ride="carousel">
+                            <div id="carouselExampleControls" class="carousel cel cell2" data-bs-ride="carousel"  data-bs-interval='false' >
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="img\others\2.JPG" class="d-block" alt="...">
@@ -85,20 +85,19 @@
                             </div>
                         </div>
                         <button class="carousel-control-prev prev" type="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next next" type="button"  data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+                        <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-control-next next" type="button"  data-bs-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+
+                        </button>
                 </div>
                         
                
 
 
 
-            <div class="about">
+            <div class="about" id="sobre">
                 <div class="line"></div>
                 <h5 class="inLine">Sobre nós</h5>
                 <p>A WhiteCred não é uma instituição financeira, atuamos como correspondentes bancários a
@@ -131,12 +130,36 @@ atendê-los e garantir seu sorriso no final da contratação. </p>
         </div>
         </div>
         <script>
+
+        $('.fechadoCarousel').on('touchstart', function(event){
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function(event){
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+
+            if( Math.floor(xClick - xMove) > sensitivityInPx ){
+                $(this).carousel('next');
+            }
+            else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+                $(this).carousel('prev');
+                }
+            });
+            $(this).on('touchend', function(){
+                $(this).off('touchmove');
+            });
+        });
+
+
+
+
+
           $('.next').click( function (){
-            $('.cel').carousel('next')
+            $('.cel').carousel('next');
           });
 
           $('.prev').click( function (){
-            $('.cel').carousel('prev')
+            $('.cel').carousel('prev');
+
           });
     </script>
     </body>
@@ -150,4 +173,15 @@ atendê-los e garantir seu sorriso no final da contratação. </p>
             }
              );
     </script>
-</html>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+    <script type="text/javascript">
+    jQuery(".fechadoCarousel").swipe({
+        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+            if (direction == 'left') jQuery(this).carousel('next');
+            if (direction == 'right') jQuery(this).carousel('prev');
+        },
+        allowPageScroll: "vertical" 
+    });
+    </script>
+
+    </html>

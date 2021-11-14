@@ -1,7 +1,4 @@
-.fechado .card-group{
-    margin: 2% auto 0 auto;
-    width: 60%;
-}
+
 
 .ofertas .card-group .allCard{
     margin: 0 auto;
@@ -66,14 +63,6 @@
     margin: 0 auto;
 } 
 
-.fechado .card-group .card {
-    border: none; 
-    margin:  0 5px 0 5px;
-} 
-
-.fechado .card img {
-    width: 150px;
-} 
 .ofertas .card-group .allCard h3 {
   padding-top: 30px;
  } 
