@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/cards.css">
         <link rel="stylesheet" href="./css/cel_carousel.css">
+        <link rel="icon" type="image/png" href="img\others\favincon.png"/>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <title>WC Consult</title>
     </head>
@@ -14,9 +15,10 @@
         <header id="start">
             <?php include 'comp/nav.php' ?>
             <?php include 'comp/carousel.php' ?>
-</header>
+        </header>
 
         <div class="toCenter">
+            <br><br><br>
         <div class="fechado">
             <div class="line"></div>
             <h5 class="inLine">Bancos parceiros</h5>
