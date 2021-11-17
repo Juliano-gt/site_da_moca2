@@ -16,7 +16,6 @@
             <?php include 'comp/nav.php' ?>
             <?php include 'comp/carousel.php' ?>
         </header>
-
         <div class="toCenter">
             <br><br><br>
         <div class="fechado">
@@ -24,10 +23,12 @@
             <h5 class="inLine">Bancos parceiros</h5>
             <?php include 'comp/fechado.php' ?>
         </div>
-
+        <div class="whatsFixed" >
+            <a href="https://wa.me/message/FRTRUF7GV3BBE1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
         <div class="bgOthers" id="ofertas">
-            
-            <div class="ofertas"><br>
+            <br><br><br><br><br>
+            <div class="ofertas">
                 <?php include 'comp/ofertas.php' ?>
             </div>
             <br><br><br>
@@ -91,7 +92,6 @@
                         </button>
                         <button class="carousel-control-next next" type="button"  data-bs-slide="next">
                         <i class="fas fa-chevron-right"></i>
-
                         </button>
                 </div>
                         
@@ -113,9 +113,9 @@ atendê-los e garantir seu sorriso no final da contratação. </p>
             </div>
 
             <div class="contat">
-                  <a href=""><i class="fab fa-whatsapp"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://wa.me/message/FRTRUF7GV3BBE1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  <a href="https://instagram.com/whitecred?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/109674078183007/photos/a.112929914524090/114385447711870/" target="_blank"><i class="fab fa-facebook-square"></i></a>
             </div>
             <br><br>
         </div>
@@ -172,8 +172,18 @@ atendê-los e garantir seu sorriso no final da contratação. </p>
             window.addEventListener("scroll", function(){
                 var navbar = document.querySelector("header"); 
                 navbar.classList.toggle("sticky", window.scrollY != 0);
+            });
+
+            var baseHeight = $(window).height();
+            var num = .75;
+
+            $(window).bind('scroll', function () {
+        if ($(window).scrollTop() / baseHeight > num) {
+            $('.whatsFixed').addClass('change');
+        } else {
+            $('.whatsFixed').removeClass('change');
             }
-             );
+        });
     </script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
     <script type="text/javascript">

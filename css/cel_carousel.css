@@ -6,7 +6,7 @@
 }
 
 .celBack .carousel .carousel-inner img{
-    margin: 0 30% 0 55.8%;
+    margin: 0 30% 0 55.6%;
     width: 160px;
     height: 293px;
     z-index: -2;
@@ -26,8 +26,8 @@
 }
 
 .celFront .carousel .carousel-inner img{
-    margin: 130px auto 0 38%;
-    width: 254px;
+    margin: 130px auto 0 38.5%;
+    width: 245px;
     height: 430.05px;
     z-index: 2;
 }
@@ -41,10 +41,12 @@
 }
 .feedCont .prev{
     margin-left: 25%;
+    margin-top: -150px;
 }
 
 .feedCont .next{
-    margin-right: 25%;
+    margin-right: 29.6%;
+    margin-top: -150px;
     position: absolute;
 }
 .feedCont button{
@@ -54,6 +56,10 @@
 .feedCont button i{
     padding: 15px;
     border-radius: 50%;
-    color: white;
-    background-color: black;
+    color: #F2F2F2;
+}
+@media only screen and (max-device-width: 768px) {
+    .feedCont .next{
+        margin-right: 23%;
+    }
 }

@@ -82,7 +82,7 @@ body{
     float: right;
     margin: 100px 0 0 0;
     height: 200px;
-    width: 500px;
+    width: 600px;
     transform: skewY(3deg);
     background-color: #DAF1D5;
 ;
@@ -90,12 +90,17 @@ body{
 .feedback .congrats h3{
     text-align: right;
     float: right;
-    font-size: 125%;
-    padding: 10% 9% 0 0;
-    width: 60%;
+    font-size: 145%;
+    padding: 8% 5% 0 0;
+    width: 50%;
     font: 'Lato', Verdana, Helvetica, sans-serif;
 }
 
+@media only screen and (max-device-width: 768px) {
+    .feedback .congrats h3{
+        font-size: 125%;
+    }
+}
 .feedback .whiteCred{
     width: 20%;
     float: left;
@@ -106,6 +111,7 @@ body{
 .feedback .whiteCred h3{
     color: white;
     font: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 185%;
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
@@ -176,7 +182,7 @@ body{
 } 
 .footer2{
     width: 100%;
-    height: 3px; 
+    height: 8px;   
    background-color: rgba(0,23,0,1);
    margin-bottom: 10px; 
    transform: skewY(-0.8deg); 
@@ -202,17 +208,42 @@ body{
     width: 314px;
 }
 
-
-.fechado .card-group{
-   margin: 40px 10% 100px 10%;
+.fechado .carousel-inner{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.fechado .carousel-inner .carousel-item{
+    height: 100px;
+}
+.fechado .carousel-inner img{
+    width: 70%;
+    margin: 0 auto 0 15%; 
+    
+}
+.fechado button{
+    opacity: 1;
+    
+}
+.fechado button i{
+    color: #002100;
 }
 
-.fechado .card-group .card{
-    border: none;
-    margin: 0 5% 0 5%;
+.whatsFixed{
+    margin: 50px 0 0 90%;
+    position: absolute;
 }
 
-.fechado .card-group .card img{
-    width: 120px;
-    height: 25px;
+.whatsFixed i{
+    padding: 15px 17px;
+    font-size: 40px;
+    color: #f3efef;
+    position: absolute;
+    background-color: #49d49f;
+    border-radius: 50%;
+    z-index: 2;
 }
+
+.change{
+    position: fixed;
+    margin: -500px auto 0 90%;
+}   

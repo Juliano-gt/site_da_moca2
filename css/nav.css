@@ -5,8 +5,16 @@
   font-size: 14px;
   color: white;
 }
-
-
+.navbar-collapse img{
+  margin-left: 100px;
+  width: 20%;
+}
+@media only screen and (max-device-width: 768px) {
+  .navbar-collapse img{
+    margin-left: 0;
+    width: 20%;
+  }
+}
 
 .navbar-toggler i{
   color: white;

@@ -1,20 +1,16 @@
 header .carousel-item img{
   height: 100vh;
   width: 100%; 
+  z-index: -1;
 }
 @media only screen and (max-device-width: 680px) {
   header .carousel-item img{
     height: 50vh;
   }
-}
 
-.carousel-item .carousel-caption{
-  margin: 0 60% 12% 0;
-  width: 20%;
-}
-
-.carousel-caption p{
-  text-align: justify;
+  header .carousel-button{
+    margin-top: -50%;
+  }
 }
 
 
@@ -34,7 +30,7 @@ width: 200px;
 }
 
 .texto-carousel p {
-  color: white; 
+  color: #CCCBCB; 
   width: 350px;
 } 
 .texto-carousel span { 
@@ -55,6 +51,10 @@ width: 200px;
   height: 33px; 
   margin-top: 10px; 
 } 
+.texto-carousel button a{
+  color: aliceblue;
+  text-decoration: none;
+}
 
 
 .texto-carousel button:hover {
