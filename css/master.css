@@ -44,9 +44,11 @@ body{
     text-align: center;
     width: 70%;
     margin: 2% auto 0 auto; 
-    font-family: roboto; 
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: bold;
     font-size: 18px; 
     font-weight: 200;
+    color: #858585; 
 }
 
 .bgOthers{
@@ -174,6 +176,8 @@ body{
 
 .footer p{
     text-align: justify;
+    font: 'Lato', Verdana, Helvetica, sans-serif;
+    transform: skewY(1deg); 
 }
 
 
@@ -229,21 +233,32 @@ body{
 }
 
 .whatsFixed{
-    margin: 50px 0 0 90%;
     position: absolute;
+    opacity: 0;
 }
 
 .whatsFixed i{
     padding: 15px 17px;
     font-size: 40px;
-    color: #f3efef;
     position: absolute;
-    background-color: #49d49f;
     border-radius: 50%;
-    z-index: 2;
+    color: #49d49f;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #49d49f;
+}
+
+.whatsFixed i:hover{
+    border: 2px solid #49d49f;
+    background-color: #49d49f;
+    color: #f3efef;
+    transition-duration: 0.5s;
 }
 
 .change{
     position: fixed;
+    display: block;
     margin: -500px auto 0 90%;
+    opacity: 1;
+    transition-duration: 0.5s;
+    z-index: 2;
 }   

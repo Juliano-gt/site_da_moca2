@@ -175,7 +175,7 @@ atendê-los e garantir seu sorriso no final da contratação. </p>
             });
 
             var baseHeight = $(window).height();
-            var num = .75;
+            var num = .35;
 
             $(window).bind('scroll', function () {
         if ($(window).scrollTop() / baseHeight > num) {
