@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/cards.css">
         <link rel="stylesheet" href="./css/cel_carousel.css">
-        <link rel="icon" type="image/png" href="img\others\favincon.png"/>
+        <link rel="icon" type="image/png" href="img\others\favicon.png"/>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <title>WC Consult</title>
     </head>
